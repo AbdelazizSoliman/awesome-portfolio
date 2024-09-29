@@ -28,8 +28,8 @@
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
-    ],
-    "no-unuesd-vars" : "warn"
+    ]
+    // "no-unuesd-vars" : "warn"
   },
   "ignorePatterns": ["dist/", "build/"]
 }

@@ -2,15 +2,15 @@ header ul.flex {
   gap: 16px;
 }
 
-
 header button {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
+
 header.d-flex nav {
-    background: var(--bgHeader);
-    padding: 0.77rem 1.6rem;
-    border-radius: 55px;
-    box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.233);
+  background: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 20px rgba(51, 51, 51, 0.233);
 }
 
 header ul li a {
@@ -19,59 +19,43 @@ header ul li a {
   font-size: 0.88rem;
   font-weight: 500;
 }
+
 header ul li a:hover {
   color: var(--blue);
   opacity: 1;
   font-size: 1rem;
 }
 
-header button.menu{
+header button.menu {
   display: none;
 }
 
-
-
-.headerLayout{
-    background:#272833 ;
+.headerLayout {
+  background: #272833;
 }
 
-header .headerLayout ul.model{
-
-    width: 80%;
-    margin-inline: auto;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    background: black;
+header .headerLayout ul.model {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background: black;
 }
 
-header .headerLayout ul.model li{
-    border-bottom: 1px solid var(--border);
-    padding : 0.6rem 0;
-}
-header .headerLayout ul.model li a{
-    font-size: 1rem ;
+header .headerLayout ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 0;
 }
 
+header .headerLayout ul.model li a {
+  font-size: 1rem;
+}
 
+@media (max-width: 700px) {
+  header.d-flex nav { display: none; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media  (max-width :700px){
-    header.d-flex nav {display: none;}
-    header button.menu{
-        display: block;
-      }
+  header button.menu {
+    display: block;
   }
-
-  
+}

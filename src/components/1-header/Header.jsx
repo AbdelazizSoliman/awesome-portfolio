@@ -1,60 +1,60 @@
-import React, { useState } from "react";
-import "./header.css";
-export default function Header() {
+import React, { useState } from 'react';
+import './header.css';
 
-  const [showModel, setshowModel] = useState(false) 
+export default function Header() {
+  const [showModel, setshowModel] = useState(false);
   return (
     <header className="d-flex align-items-center justify-content-between mt-3  px-1">
-      <button onClick={(first) => { setshowModel(true) }} className="menu">show model</button>
-      <div></div> 
+      <button type="button" onClick={() => { setshowModel(true); }} className="menu">show model</button>
+      <div />
 
       <nav>
         <ul className="d-flex gap-3 mt-2 ">
 
           <li>
-            <a href="">About</a>
+            <a href="/">About</a>
           </li>
           <li>
-            <a href="">Articles</a>
+            <a href="/">Articles</a>
           </li>
           <li>
-            <a href="">Projets</a>
+            <a href="/">Projets</a>
           </li>
           <li>
-            <a href="">Speaking</a>
+            <a href="/">Speaking</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="/">Contact</a>
           </li>
         </ul>
       </nav>
-      <button >light</button>
-{showModel && (
+      <button type="button">light</button>
+      {showModel && (
 
       <div className="headerLayout  position-fixed top-0 start-0 bottom-0 end-0  opacity-75">
 
-          <ul className="model ">
+        <ul className="model ">
           <li>
-            <button onClick={() => { setshowModel(false) }}>close</button>
+            <button type="button" onClick={() => { setshowModel(false); }}>close</button>
           </li>
           <li className="">
-            <a href="">About</a>
+            <a href="/">About</a>
           </li>
-          <li  className="">
-            <a href="">Articles</a>
+          <li className="">
+            <a href="/">Articles</a>
           </li>
-          <li  className="">
-            <a href="">Projets</a>
+          <li className="">
+            <a href="/">Projets</a>
           </li>
-          <li  className="">
-            <a href="">Speaking</a>
+          <li className="">
+            <a href="/">Speaking</a>
           </li>
           <li className="border-0">
-            <a href="">Contact</a>
+            <a href="/">Contact</a>
           </li>
-          </ul>
+        </ul>
       </div>
-)}
+      )}
     </header>
   );
 }
