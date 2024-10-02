@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="icon icon-twitter" />
           <div className="icon icon-instagram" />
           <div className="icon icon-github" />
-          <div className="icon icon-linkedin" />
+          <div className="icon icon-linkedin-square" />
         </div>
       </div>
       <div className="right-section animation border">animation</div>
