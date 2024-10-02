@@ -51,7 +51,22 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: initial;
+  all: unset;
   transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
 }

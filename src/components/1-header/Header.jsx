@@ -5,7 +5,7 @@ export default function Header() {
   const [showModel, setshowModel] = useState(false);
   return (
     <header className="d-flex align-items-center justify-content-between mt-3  px-1">
-      <button type="button" onClick={() => { setshowModel(true); }} className="menu">show model</button>
+      <button type="button" aria-label="icon" onClick={() => { setshowModel(true); }} className=" icon-menu d-none menu justify-content-center align-items-center  " />
       <div />
 
       <nav>
@@ -28,14 +28,14 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <button type="button">light</button>
+      <button type="button" aria-label="icon" className="mode d-flex justify-content-center align-items-center"><span className="icon-moon-o " /></button>
       {showModel && (
 
       <div className="headerLayout  position-fixed top-0 start-0 bottom-0 end-0  opacity-75">
 
         <ul className="model ">
-          <li>
-            <button type="button" onClick={() => { setshowModel(false); }}>close</button>
+          <li className=" text-end border-0 p-0 ">
+            <button aria-label="icon" className="icon-close1  " type="button" onClick={() => { setshowModel(false); }} />
           </li>
           <li className="">
             <a href="/">About</a>
