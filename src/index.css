@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 html {
   font-family: "Roboto", sans-serif;
@@ -6,14 +6,16 @@ html {
   letter-spacing: 1px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: initial;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-
-*,
-*::before,
-*::after { box-sizing: inherit; }
 
 :root {
   --primary: #000;
@@ -23,6 +25,8 @@ html {
   --subtitle: rgba(161 161 170);
   --bgHeader: rgba(39 39 40);
   --blue: rgba(93 188 252);
+  --icon-hover: #6faef7;
+  --container-padding: 4.8rem;
 }
 
 .light {
@@ -39,11 +43,14 @@ body {
   width: 80%;
   margin-inline: auto;
   background-color: var(--secondary);
+  padding: 0 var(--container-padding);
 }
 
 .divider {
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding) * -1);
 }
 
 li {
@@ -59,6 +66,15 @@ a:hover {
   cursor: pointer;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 2px solid red;
+}
+
 button {
   all: unset;
 }
@@ -69,4 +85,25 @@ button:hover {
 
 button:active {
   scale: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 1.7rem;
+
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+
+  .divider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: calc(var(--container-padding) * -1);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 var(--container-padding);
+  }
 }
