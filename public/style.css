@@ -1,7 +1,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.eot?16jgge");
-  src: url("fonts/icomoon.eot?16jgge#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/icomoon.eot?16jgge#iefix") format("embedded-opentype"),
     url("fonts/icomoon.ttf?16jgge") format("truetype"),
     url("fonts/icomoon.woff?16jgge") format("woff"),
     url("fonts/icomoon.svg?16jgge#icomoon") format("svg");
