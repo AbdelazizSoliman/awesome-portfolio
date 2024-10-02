@@ -16,6 +16,7 @@ section.hero .icon-verified {
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
 }
+
 section.hero .avatar {
   width: 88px;
   border-radius: 50%;
@@ -51,6 +52,6 @@ section.hero .all-icons .icon:hover {
   color: var(--icon-hover);
 }
 
-/*====================================
+/* ====================================
      1. Right Section ==> animation
-======================================*/
+====================================== */

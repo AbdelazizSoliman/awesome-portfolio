@@ -1,5 +1,5 @@
-import React from "react";
-import "./hero.css";
+import React from 'react';
+import './hero.css';
 
 export default function Hero() {
   return (
@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="left-section">
         <div className="parent-avatar flex">
           <img src="./me-modified.png" className="avatar" alt="" />
-          <div className="icon-verified"></div>
+          <div className="icon-verified" />
         </div>
         <h1 className="title">Full Stack Developer.</h1>
 
@@ -17,10 +17,10 @@ export default function Hero() {
           technical and teamwork skills.
         </p>
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <div className="icon icon-twitter" />
+          <div className="icon icon-instagram" />
+          <div className="icon icon-github" />
+          <div className="icon icon-linkedin" />
         </div>
       </div>
       <div className="right-section animation border">animation</div>

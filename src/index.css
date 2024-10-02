@@ -7,20 +7,14 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: initial;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 :root {
@@ -93,9 +87,11 @@ button:hover {
 button:active {
   scale: 0.9;
 }
+
 @media (max-width: 1000px) {
   .container {
     --container-padding: 1.7rem;
+
     width: 90%;
     padding: 0 var(--container-padding);
   }
