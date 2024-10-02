@@ -58,8 +58,7 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: initial;
+  all: unset;
   transition: 0.2s;
 }
 
