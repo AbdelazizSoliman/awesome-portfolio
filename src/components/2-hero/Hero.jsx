@@ -17,10 +17,11 @@ export default function Hero() {
           technical and teamwork skills.
         </p>
         <div className="all-icons flex">
-          <div className="icon icon-twitter" />
-          <div className="icon icon-instagram" />
+          {/* <div className="icon icon-twitter" /> */}
+          {/* <div className="icon icon-instagram" /> */}
           <div className="icon icon-github" />
           <div className="icon icon-linkedin-square" />
+          <div className="qabila"><img src="./orangeLogo.svg" width={22} alt="" /></div>
         </div>
       </div>
       <div className="right-section animation border">animation</div>

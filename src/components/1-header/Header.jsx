@@ -31,7 +31,7 @@ export default function Header() {
       <button type="button" aria-label="icon" className="mode d-flex justify-content-center align-items-center"><span className="icon-moon-o " /></button>
       {showModel && (
 
-      <div className="headerLayout  position-fixed top-0 start-0 bottom-0 end-0  opacity-75">
+      <div className="headerLayout  position-fixed top-0 start-0 bottom-0 end-0  ">
 
         <ul className="model ">
           <li className=" text-end border-0 p-0 ">
