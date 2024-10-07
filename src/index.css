@@ -103,7 +103,9 @@ button:active {
 
 @media (max-width: 600px) {
   .container {
-    width: 98%;
-    padding: 0 var(--container-padding);
+    width: 90%;
+    padding: 2rem var(--container-padding);
+    border: none;
+    margin-top: -15px;
   }
 }

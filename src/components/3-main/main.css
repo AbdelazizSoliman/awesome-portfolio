@@ -1,3 +1,115 @@
 * {
   margin: 0;
 }
+
+/* sideBar Siction */
+.mainSection {
+  gap: 1rem;
+}
+
+.mainSection .sideBar ul {
+  padding: 0;
+}
+
+.mainSection .sideBar li {
+  padding: 1rem 0.5rem;
+  background-color: rgb(37, 38, 46, 1);
+  text-align: center;
+  margin: 0.5rem;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mainSection .sideBar li:hover {
+  opacity: 1;
+}
+
+.mainSection .sideBar li.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  border-radius: 5px;
+  border: 1px solid var(--blue);
+  padding: 1.1rem;
+}
+
+/* projects Section */
+
+.projects {
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  margin-inline-start: 10px;
+  margin: auto;
+}
+
+.cards {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.293),
+      rgba(3, 3, 3, 0.5)
+    );
+}
+
+.cards:hover {
+  border: 1px solid var(--blue);
+  transform: rotate(1deg);
+  scale: 1.02;
+  cursor: pointer;
+}
+
+.cards img {
+  border-radius: 5px;
+}
+
+.mainSection .projects .cards .title {
+  color: var(--title);
+}
+
+.mainSection .box .sub-title {
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-inline-start: 10px;
+}
+
+.mainSection .box .links {
+  color: var(--subtitle);
+  font-size: 1.2rem;
+}
+
+.cards .icon-github:hover,
+.cards .icon-link:hover {
+  font-size: 1.3rem;
+  color: var(--icon-hover);
+  cursor: pointer;
+}
+
+.mainSection .cards a.card-link {
+  font-size: 0.9rem;
+  color: var(--blue);
+}
+
+@media (max-width: 600px) {
+  .mainSection {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .mainSection .sideBar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mainSection .sideBar ul li {
+    padding: 0.6rem 5px;
+    align-content: center;
+    font-size: 0.8rem;
+  }
+}

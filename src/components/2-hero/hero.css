@@ -14,13 +14,13 @@ section.hero .left-section {
 section.hero .icon-verified {
   color: var(--blue);
   font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  margin-top: 4.5rem;
 }
 
 section.hero .avatar {
-  width: 88px;
+  width: 95px;
   border-radius: 50%;
-  border: 1px solid lightgreen;
+  border: 2px solid rgba(218, 165, 32, 0.829);
   padding: 1px;
   box-shadow: 2px 2px 40px rgba(53, 146, 223, 0.586) inset;
 }
@@ -55,3 +55,12 @@ section.hero .all-icons .icon:hover {
 /* ====================================
      1. Right Section ==> animation
 ====================================== */
+
+section.hero .qabila img {
+  width: 1.4rem;
+  margin-bottom: 4px;
+}
+
+section.hero .qabila:hover {
+  cursor: pointer;
+}

@@ -62,7 +62,10 @@ header .icon-close1:hover {
 }
 
 .headerLayout {
-  background: #272833;
+  background-color: rgba(40, 40, 48, 0.91);
+  opacity: 90%;
+  border: 1px solid red;
+  backdrop-filter: blur(10px);
 }
 
 @keyframes mymove {
@@ -80,6 +83,8 @@ header .headerLayout ul.model {
   padding: 1rem 2rem;
   background: black;
   scale: 1;
+
+  /* filter: blur(8px); */
 }
 
 header .headerLayout ul.model li {
