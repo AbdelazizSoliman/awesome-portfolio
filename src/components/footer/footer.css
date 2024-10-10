@@ -1,3 +1,28 @@
 * {
   margin: 0;
 }
+
+  footer ul a{
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  transition: .3s;
+}
+
+footer ul a:hover{
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer p{
+  color: rgb( 113 , 113, 122);
+}
+
+
+@media (max-width: 800px) {
+  footer {
+    align-items: center;
+    flex-direction: column;
+    
+  }
+}
