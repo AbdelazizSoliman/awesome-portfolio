@@ -18,6 +18,22 @@ html {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
 :root {
   --primary: #000;
   --secondary: #18181b;
@@ -28,6 +44,10 @@ html {
   --blue: rgba(93 188 252);
   --icon-hover: #6faef7;
   --container-padding: 4.8rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .light {
@@ -101,55 +121,34 @@ button:active {
     margin-left: calc(var(--container-padding) * -1);
   }
 }
-::-webkit-scrollbar{
-  width: 0.5rem;
-}
-::-webkit-scrollbar-track {
-  border: 7px solid #292c3b;
-  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  background-color: #d4d4d8;
 
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 2px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-   
-  /* for Firefox */
-  /* html{
+/* for Firefox */
+
+/* html{
     scrollbar-color: #9e4673 #3d4a59;
   } */
 
+.scroll2top {
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  rotate: 90deg;
+  border: 1px solid #ffffff4f;
+}
 
-  .scroll2top{
-    background-color: rgba(25, 118, 210, 0.85);
-    width: 2.6rem;
-    height: 2.6rem;
-    border-radius: 50%;
-    font-size: 2.5rem;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    rotate: 90deg;
-    border: 1px solid #ffffff4f;
+.scroll2top span {
+  position: relative;
+  bottom: 35%;
+  left: 25%;
+}
 
-  }
-
-  .scroll2top span{
-    position: relative;
-    bottom: 35%;
-    left: 25%;
-  }
-
-
-
-   
 @media (max-width: 600px) {
   .container {
     width: 90%;
@@ -158,12 +157,13 @@ button:active {
     margin-top: -15px;
   }
 
-  .scroll2top{
-    opacity: .5;
+  .scroll2top {
+    opacity: 0.5;
     width: 2rem;
     height: 2rem;
   }
-  .scroll2top span{
+
+  .scroll2top span {
     position: relative;
     bottom: 61%;
     left: 20%;
