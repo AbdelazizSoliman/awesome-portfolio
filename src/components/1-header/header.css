@@ -64,7 +64,7 @@ header .icon-close1:hover {
 .headerLayout {
   background-color: rgba(40, 40, 48, 0.91);
   opacity: 90%;
-  border: 1px solid red;
+
   backdrop-filter: blur(10px);
 }
 
@@ -85,7 +85,7 @@ header .headerLayout ul.model {
   scale: 1;
 
   /* filter: blur(8px); */
-}
+} 
 
 header .headerLayout ul.model li {
   border-bottom: 1px solid var(--border);
