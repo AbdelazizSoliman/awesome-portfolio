@@ -64,7 +64,6 @@ header .icon-close1:hover {
 .headerLayout {
   background-color: rgba(40, 40, 48, 0.91);
   opacity: 90%;
-  border: 1px solid red;
   backdrop-filter: blur(10px);
 }
 

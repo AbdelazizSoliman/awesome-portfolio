@@ -9,7 +9,7 @@ export default function Header() {
       <div />
 
       <nav>
-        <ul className="d-flex gap-3 mt-2 ">
+        <ul className="d-flex gap-3 mt-2 ps-1 ">
 
           <li>
             <a href="/">About</a>
