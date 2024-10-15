@@ -6,7 +6,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div id='up' className="container">
+    <div id="up" className="container">
       <Header />
       <div className="divider" />
       <Hero />
@@ -17,7 +17,7 @@ function App() {
       <div className="divider" />
       <Footer />
       <a href="#up">
-      <button className='scroll2top '><span >«</span></button>
+        <button className="scroll2top "><span>«</span></button>
       </a>
     </div>
   );
