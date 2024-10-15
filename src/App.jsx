@@ -17,7 +17,7 @@ function App() {
       <div className="divider" />
       <Footer />
       <a href="#up">
-        <button className="scroll2top "><span>«</span></button>
+        <button type="button" className="scroll2top "><span>«</span></button>
       </a>
     </div>
   );
