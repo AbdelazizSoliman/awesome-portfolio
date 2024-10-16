@@ -39,6 +39,7 @@ header button.mode {
   border-radius: 50%;
   color: var(--subtitle);
   border: 1px solid rgba(218, 165, 32, 0.435);
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.6);
 }
 
 header .icon-menu:hover,
@@ -46,6 +47,10 @@ header button.mode:hover {
   color: var(--title);
   border: 1px solid rgba(218, 165, 32, 0.829);
   transition: 0.2s;
+}
+
+header .icon-sun {
+  color: orange;
 }
 
 /* header clear */

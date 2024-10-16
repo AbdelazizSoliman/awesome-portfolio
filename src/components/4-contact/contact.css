@@ -32,10 +32,6 @@ section.contact-us #message {
   border-radius: 5px;
   transition: 0.3s;
   font-size: 1.1rem;
-}
-
-/* Textarea specific styles */
-section.contact-us #message {
   min-height: 9rem;
   resize: vertical;
 }
@@ -45,7 +41,7 @@ section.contact-us #message {
 .light section.contact-us #message {
   background-color: rgba(255, 255, 255, 0.162);
   border: 1px solid rgba(128, 128, 128, 0.451);
-  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+  box-shadow: -1px 1px 1px rgba(73, 73, 75, 0.5);
   color: #232324;
 }
 
