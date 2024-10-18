@@ -64,6 +64,13 @@
     );
 }
 
+.cards:hover {
+  border: 1px solid var(--blue);
+  transform: rotate(1deg);
+  scale: 1.02;
+  cursor: pointer;
+}
+
 .light .cards,
 .light .cards:hover {
   border: none;
@@ -72,13 +79,6 @@
       rgba(201, 224, 226, 0.28),
       rgba(108, 106, 106, 0.393)
     );
-}
-
-.cards:hover {
-  border: 1px solid var(--blue);
-  transform: rotate(1deg);
-  scale: 1.02;
-  cursor: pointer;
 }
 
 .light .cards:hover {

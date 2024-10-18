@@ -32,6 +32,13 @@ section.contact-us #message {
   border-radius: 5px;
   transition: 0.3s;
   font-size: 1.1rem;
+  box-shadow: -2px 1px 1px rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.3);
+}
+
+
+
+/* Textarea specific styles */
+section.contact-us #message {
   min-height: 9rem;
   resize: vertical;
 }
@@ -41,7 +48,7 @@ section.contact-us #message {
 .light section.contact-us #message {
   background-color: rgba(255, 255, 255, 0.162);
   border: 1px solid rgba(128, 128, 128, 0.451);
-  box-shadow: -1px 1px 1px rgba(73, 73, 75, 0.5);
+  box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
   color: #232324;
 }
 
@@ -76,13 +83,19 @@ section.contact-us .submit:hover {
   scale: 0.97;
 }
 
+.b-alert {
+  left: 2.5rem;
+  margin-top: 1.2rem;
+}
+
 /* =====================================
   3- Responsive Design (media query)
 ======================================== */
 
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
   section.contact-us .contact-animation {
-    display: none;
+    display: none !important;
+    margin-left: 10px;
   }
 }
 
