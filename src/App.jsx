@@ -33,7 +33,6 @@ function App() {
       <a href="#up" style={{ opacity: showScrollBtn ? 1 : 0, transition: '.5s' }}>
         <button className="scroll2top "><span>«</span></button>
       </a>
-
     </div>
   );
 }
