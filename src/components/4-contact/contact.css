@@ -32,7 +32,10 @@ section.contact-us #message {
   border-radius: 5px;
   transition: 0.3s;
   font-size: 1.1rem;
+  box-shadow: -2px 1px 1px rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
+
+
 
 /* Textarea specific styles */
 section.contact-us #message {
@@ -80,13 +83,19 @@ section.contact-us .submit:hover {
   scale: 0.97;
 }
 
+.b-alert {
+  left: 2.5rem;
+  margin-top: 1.2rem;
+}
+
 /* =====================================
   3- Responsive Design (media query)
 ======================================== */
 
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
   section.contact-us .contact-animation {
-    display: none;
+    display: none !important;
+    margin-left: 10px;
   }
 }
 

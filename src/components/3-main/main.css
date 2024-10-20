@@ -20,6 +20,7 @@
   opacity: 0.5;
   cursor: pointer;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .mainSection .sideBar li:hover {
@@ -31,11 +32,15 @@
 
   /* font-weight: bold; */
 
-  /* letter-spacing: 1.4px; */
+  /* letter-spacing: 1px; */
   border-radius: 5px;
   border: 1px solid var(--blue);
 
   /* padding: 1.1rem; */
+}
+
+.light .mainSection .sideBar li.active {
+  border: 1px solid #000;
 }
 
 /* projects Section */
@@ -48,6 +53,7 @@
 }
 
 .cards {
+  box-shadow: -1px 1px 1px rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.3);
   border: 1px solid rgba(93, 188, 252, 0.3);
   transition: 0.3s;
   border-radius: 5px;
@@ -63,6 +69,25 @@
   transform: rotate(1deg);
   scale: 1.02;
   cursor: pointer;
+}
+
+.light .cards,
+.light .cards:hover {
+  border: none;
+  background-image:
+    linear-gradient(
+      rgba(201, 224, 226, 0.28),
+      rgba(108, 106, 106, 0.393)
+    );
+}
+
+.light .cards:hover {
+  background-color: rgba(255, 255, 255, 0.195) !important;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.597),
+      rgba(138, 133, 133, 0.393)
+    );
 }
 
 .cards img {

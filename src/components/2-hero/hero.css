@@ -5,6 +5,7 @@ section.hero {
 section.hero .prevent-avatar.flex {
   align-items: end;
   gap: 0.6rem;
+  min-height: 88px;
 }
 
 section.hero .left-section {
@@ -63,4 +64,16 @@ section.hero .qabila img {
 
 section.hero .qabila:hover {
   cursor: pointer;
+}
+
+.hero .right-section {
+  width: 100% !important;
+  translate: 120px 45px;
+}
+
+@media (max-width: 900px) {
+  .hero .right-section {
+    display: none !important;
+    margin-left: 10px;
+  }
 }

@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
 
 export default function Header() {
   const [showModel, setshowModel] = useState(false);
+  const [theme, settheme] = useState(localStorage.getItem('currentmode') ?? 'dark');
+  useEffect(() => {
+    if (theme === 'light') {
+      document.body.classList.remove('dark');
+      document.body.classList.add('light');
+    } else {
+      document.body.classList.remove('light');
+      document.body.classList.add('dark');
+    }
+  }, [theme]);
   return (
     <header className="d-flex align-items-center justify-content-between mt-3  px-1">
       <button type="button" aria-label="icon" onClick={() => { setshowModel(true); }} className=" icon-menu d-none menu justify-content-center align-items-center  " />
@@ -28,7 +38,17 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <button type="button" aria-label="icon" className="mode d-flex justify-content-center align-items-center"><span className="icon-moon-o " /></button>
+      <button
+        onClick={() => {
+          localStorage.setItem('currentmode', theme === 'dark' ? 'light' : 'dark');
+          settheme(localStorage.getItem('currentmode'));
+        }}
+        type="button"
+        aria-label="icon"
+        className="mode d-flex justify-content-center align-items-center"
+      >
+        {theme === 'dark' ? (<span className="icon-moon-o " />) : (<span className="icon-sun " />)}
+      </button>
       {showModel && (
 
       <div className="headerLayout  position-fixed top-0 start-0 bottom-0 end-0  ">
