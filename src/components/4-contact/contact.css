@@ -35,8 +35,6 @@ section.contact-us #message {
   box-shadow: -2px 1px 1px rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.3);
 }
 
-
-
 /* Textarea specific styles */
 section.contact-us #message {
   min-height: 9rem;
