@@ -6,17 +6,23 @@ import Contact from './components/4-contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
+  const [showScrollBtn, setshowScrollBtn] = useState(false);
+
   useEffect(() => {
-    window.addEventListener('scroll', (e) => {
-      if (scrollY > 500) {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
         setshowScrollBtn(true);
       } else {
         setshowScrollBtn(false);
       }
-    }), [];
-  });
+    };
 
-  const [showScrollBtn, setshowScrollBtn] = useState(false);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div id="up" className="container">
@@ -30,8 +36,13 @@ function App() {
       <div className="divider" />
       <Footer />
 
-      <a href="#up" style={{ opacity: showScrollBtn ? 1 : 0, transition: '.5s' }}>
-        <button className="scroll2top "><span>«</span></button>
+      <a
+        href="#up"
+        style={{ opacity: showScrollBtn ? 1 : 0, transition: '.5s' }}
+      >
+        <button type="button" className="scroll2top">
+          <span>«</span>
+        </button>
       </a>
     </div>
   );

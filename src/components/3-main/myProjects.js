@@ -1,4 +1,4 @@
-export const myProjects = [
+const myProjects = [
   {
     imgpath: './images/1.jpg',
     projectTitle: 'react project',
@@ -54,3 +54,5 @@ export const myProjects = [
     desc: 'lorem10lorem10lorem10lorem10lorem10lorem10',
   },
 ];
+
+export default myProjects;
